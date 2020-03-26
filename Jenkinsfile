@@ -5,7 +5,7 @@ ansiColor('xterm') {
 
 node('docker')
 {
-    settingVars()
+    settingVars([version: '1.0.0'])
 
         stage('build') {
             sh script:
