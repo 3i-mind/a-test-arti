@@ -10,7 +10,7 @@ node('docker')
         stage('build') {
             sh script:
             '''
-               echo "Just Something
+               echo "Just Something"
             '''
         }
 
