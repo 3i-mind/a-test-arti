@@ -8,10 +8,7 @@ node('docker')
     settingVars([version: '1.0.0'])
 
         stage('build') {
-            sh script:
-            '''
-               echo "Just Something"
-            '''
+            whiteSource_test()
         }
 
     stage('Build Docker Image ') {
@@ -30,4 +27,3 @@ node('docker')
 }
 }
 }
-
